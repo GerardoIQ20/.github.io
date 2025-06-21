@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio de [Tu Nombre]</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', Arial, sans-serif;
+      background: #f4f6f8;
+      color: #23272f;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #212a34;
+      color: #fff;
+      padding: 40px 0 20px 0;
+      text-align: center;
+      position: relative;
+    }
+    .logo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: contain;
+      border: 5px solid #fff;
+      margin-bottom: 10px;
+      background: #fff;
+    }
+    h1 {
+      margin: 10px 0 5px;
+      font-size: 2.5em;
+      font-weight: 700;
+    }
+    h2 {
+      margin-top: 30px;
+      color: #22314a;
+      font-weight: 700;
+    }
+    .about {
+      max-width: 700px;
+      margin: 30px auto 40px;
+      background: #fff;
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      font-size: 1.1em;
+    }
+    .section {
+      max-width: 900px;
+      margin: 30px auto;
+      background: #fff;
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+    .project-card {
+      background: #f8fafc;
+      border-radius: 12px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+      width: 270px;
+      padding: 20px;
+      text-align: left;
+      transition: box-shadow 0.2s;
+    }
+    .project-card:hover {
+      box-shadow: 0 4px 16px rgba(34,49,74,0.14);
+    }
+    .project-title {
+      font-weight: 700;
+      color: #22314a;
+      font-size: 1.1em;
+      margin-bottom: 8px;
+    }
+    .project-desc {
+      font-size: 0.98em;
+      color: #555;
+      margin-bottom: 10px;
+    }
+    .project-link {
+      color: #2b7cff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .skills-list, .edu-list, .exp-list, .contact-list {
+      list-style: none;
+      padding: 0;
+    }
+    .skills-list li, .edu-list li, .exp-list li {
+      margin-bottom: 6px;
+    }
+    .contact-list li {
+      margin-bottom: 8px;
+      font-size: 1.05em;
+    }
+    footer {
+      margin: 40px 0 10px;
+      text-align: center;
+      color: #889;
+      font-size: 0.95em;
+    }
+    @media (max-width: 700px) {
+      .about, .section {
+        padding: 18px 8px;
+      }
+      .projects {
+        flex-direction: column;
+        align-items: center;
+      }
+      .project-card {
+        width: 95%;
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo personal" class="logo">
+    <h1>[Tu Nombre]</h1>
+    <div style="font-size:1.15em;margin-top:5px;font-weight:400;">[Tu especialidad o frase breve]</div>
+  </header>
+
+  <section class="about">
+    <h2>Sobre mí</h2>
+    <p>
+      Breve presentación. Por ejemplo:<br>
+      Soy [profesión/área], con experiencia en [temas]. Me apasiona [intereses].  
+      <br><br>
+      [Agrega más información personal o profesional que quieras destacar.]
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>Proyectos Destacados</h2>
+    <div class="projects">
+      <div class="project-card">
+        <div class="project-title">[Nombre Proyecto 1]</div>
+        <div class="project-desc">Descripción breve del proyecto, tecnologías usadas y tu rol.</div>
+        <a href="https://enlace-proyecto1.com" class="project-link" target="_blank">Ver proyecto</a>
+      </div>
+      <div class="project-card">
+        <div class="project-title">[Nombre Proyecto 2]</div>
+        <div class="project-desc">Descripción breve del proyecto, tecnologías usadas y tu rol.</div>
+        <a href="https://enlace-proyecto2.com" class="project-link" target="_blank">Ver proyecto</a>
+      </div>
+      <div class="project-card">
+        <div class="project-title">[Nombre Proyecto 3]</div>
+        <div class="project-desc">Descripción breve del proyecto, tecnologías usadas y tu rol.</div>
+        <a href="https://enlace-proyecto3.com" class="project-link" target="_blank">Ver proyecto</a>
+      </div>
+      <!-- Puedes agregar más tarjetas de proyectos -->
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Habilidades</h2>
+    <ul class="skills-list">
+      <li>Habilidad 1</li>
+      <li>Habilidad 2</li>
+      <li>Habilidad 3</li>
+      <!-- Agrega más habilidades -->
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Experiencia</h2>
+    <ul class="exp-list">
+      <li>
+        <strong>[Puesto / Rol]</strong> en [Empresa / Institución] <br>
+        <span style="color:#888;font-size:0.98em;">[Año inicio - Año fin]</span><br>
+        <span>Breve descripción de tus funciones y logros principales.</span>
+      </li>
+      <!-- Más experiencia -->
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Educación</h2>
+    <ul class="edu-list">
+      <li>
+        <strong>[Título]</strong>, [Institución], [Año]
+      </li>
+      <!-- Más estudios -->
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Contacto</h2>
+    <ul class="contact-list">
+      <li><strong>Email:</strong> <a href="mailto:tu-email@gmail.com">tu-email@gmail.com</a></li>
+      <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/tuusuario" target="_blank">linkedin.com/in/tuusuario</a></li>
+      <li><strong>GitHub:</strong> <a href="https://github.com/tuusuario" target="_blank">github.com/tuusuario</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    &copy; 2025 [Tu Nombre] - Portafolio digital.
+  </footer>
+</body>
+</html>
